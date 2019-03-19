@@ -1,0 +1,102 @@
+<section class="flat-product-content">
+	<ul class="product-detail-bar">
+		<li class="active">商品描述</li>
+		<li>商品规格</li>
+		<li>商品评论</li>
+	</ul><!-- /.product-detail-bar -->
+	<div class="container">
+		<div class="row">
+			<ldbz:item_image_tag type="2" code="${item.code}" ;image>
+			      <img src="${nginxImage}${image!}" alt="" style="margin:0 auto;"/>
+	    	</ldbz:item_image_tag>
+		</div><!-- /.row -->
+		
+		
+		<div class="row">
+			<div class="col-md-12">
+				<div class="tecnical-specs">
+					<table>
+						<tbody>
+							<tr>
+								<td>重量</td>
+								<td>${item.weight}g</td>
+							</tr>
+							<tr>
+								<td>颜色</td>
+								<td>${item.colour}</td>
+							</tr>
+							<tr>
+								<td>规格</td>
+								<td>${item.size}</td>
+							</tr>
+						</tbody>
+					</table><!-- /.table -->
+				</div><!-- /.tecnical-specs -->
+			</div><!-- /.col-md-12 -->
+		</div><!-- /.row -->
+		
+		
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="review-list" id="ul_comment_list"></ul>
+			</div><!-- /.col-md-12 -->
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+</section><!-- /.flat-product-content -->
+<script type="text/javascript">
+$(function(){
+	$.post("${request.contextPath}/item/comment/getItemCommentPage" , {
+		itemCode : '${itemCode}' ,
+		status : 1 ,
+		page : 1 ,
+		limit : 10
+	} , function(ret){
+		if(ret.status==200 && ret.data.total>0){
+			$(ret.data.list).each(function( i , o ){
+				var str = showComment(o.creatorName , dateFtt("yyyy-MM-dd hh:mm:ss",new Date(o.created)) , o.comment?o.comment.replace(/<[^>]+>/g,""):'' , o.star);
+				$("#ul_comment_list").html(str);
+			});
+		}
+	});
+	
+	function dateFtt(fmt,date){
+	  var o = {   
+	    "M+" : date.getMonth()+1,                 //月份
+	    "d+" : date.getDate(),                    //日   
+	    "h+" : date.getHours(),                   //小时   
+	    "m+" : date.getMinutes(),                 //分   
+	    "s+" : date.getSeconds(),                 //秒   
+	    "q+" : Math.floor((date.getMonth()+3)/3), //季度   
+	    "S"  : date.getMilliseconds()             //毫秒   
+	  };   
+	  if(/(y+)/.test(fmt))   
+	    fmt=fmt.replace(RegExp.$1, (date.getFullYear()+"").substr(4 - RegExp.$1.length));   
+	  for(var k in o)   
+	    if(new RegExp("("+ k +")").test(fmt))   
+	  fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));   
+	  return fmt;   
+	} 
+	
+	function showComment(user , time , content , star){
+		var str = '<li>'+
+							'<div class="review-metadata">'+
+							'	<div class="name">'+
+							'		' + user + ' : <span>' + time + '</span>'+
+							'	</div>'+
+							'	<div class="queue">'+
+							'		<i class="fa fa-star" aria-hidden="true"></i>'+
+							'		<i class="fa fa-star" aria-hidden="true"></i>'+
+							'		<i class="fa fa-star" aria-hidden="true"></i>'+
+							'		<i class="fa fa-star" aria-hidden="true"></i>'+
+							'		<i class="fa fa-star" aria-hidden="true"></i>'+
+							'	</div>'+
+							'</div>'+
+							'<div class="review-content">'+
+							'	<p>'+ content + '	</p> '+
+							'</div>'+
+						'</li>';
+			return str ;
+	}
+	
+})
+</script>

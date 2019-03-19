@@ -1,0 +1,21 @@
+<div class="widget widget-categories">
+	<div class="widget-title">
+		<h3>商品类别<span></span></h3>
+	</div>
+	<ul class="cat-list style1 widget-content">
+	
+		<ldbz:category_tag level="2" fid="${parameter.category}"  ; category>
+			<li>
+				<span>${category.categoryName}</i></span>
+				<ul class="cat-child">
+					<ldbz:category_tag level="3" fid="${category.id}" ;category2>
+						<li>
+							<a href="${request.contextPath}/search?category=${parameter.category}&cid=${category2.id}" title="">${category2.categoryName}</a>
+						</li>
+					</ldbz:category_tag>
+				</ul>
+			</li>
+		</ldbz:category_tag>
+		
+	</ul><!-- /.cat-list -->
+</div><!-- /.widget-categories -->

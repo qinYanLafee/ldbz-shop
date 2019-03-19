@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ldbz-shop-common" />
+        <module name="ldbz-shop-common-mapper" />
+        <module name="ldbz-shop-common-pojo" />
+        <module name="ldbz-shop-common-tag" />
+        <module name="ldbz-shop-service-admin" />
+        <module name="ldbz-shop-service-admin-api" />
+        <module name="ldbz-shop-service-advertisement" />
+        <module name="ldbz-shop-service-advertisement-api" />
+        <module name="ldbz-shop-service-cart" />
+        <module name="ldbz-shop-service-cart-api" />
+        <module name="ldbz-shop-service-item" />
+        <module name="ldbz-shop-service-item-api" />
+        <module name="ldbz-shop-service-notify" />
+        <module name="ldbz-shop-service-notify-api" />
+        <module name="ldbz-shop-service-order" />
+        <module name="ldbz-shop-service-order-api" />
+        <module name="ldbz-shop-service-portal" />
+        <module name="ldbz-shop-service-portal-api" />
+        <module name="ldbz-shop-service-redis" />
+        <module name="ldbz-shop-service-redis-api" />
+        <module name="ldbz-shop-service-search" />
+        <module name="ldbz-shop-service-search-api" />
+        <module name="ldbz-shop-service-sso" />
+        <module name="ldbz-shop-service-sso-api" />
+        <module name="ldbz-shop-service-wishlist" />
+        <module name="ldbz-shop-service-wishlist-api" />
+        <module name="ldbz-shop-web-admin" />
+        <module name="ldbz-shop-web-cart" />
+        <module name="ldbz-shop-web-item" />
+        <module name="ldbz-shop-web-order" />
+        <module name="ldbz-shop-web-portal" />
+        <module name="ldbz-shop-web-search" />
+        <module name="ldbz-shop-web-sso" />
+        <module name="ldbz-shop-web-wishlist" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ldbz-shop" target="1.8" />
+      <module name="ldbz-shop-common" target="1.8" />
+      <module name="ldbz-shop-common-mapper" target="1.8" />
+      <module name="ldbz-shop-common-pojo" target="1.8" />
+      <module name="ldbz-shop-common-tag" target="1.8" />
+      <module name="ldbz-shop-service-admin" target="1.8" />
+      <module name="ldbz-shop-service-admin-api" target="1.8" />
+      <module name="ldbz-shop-service-advertisement" target="1.8" />
+      <module name="ldbz-shop-service-advertisement-api" target="1.8" />
+      <module name="ldbz-shop-service-cart" target="1.8" />
+      <module name="ldbz-shop-service-cart-api" target="1.8" />
+      <module name="ldbz-shop-service-item" target="1.8" />
+      <module name="ldbz-shop-service-item-api" target="1.8" />
+      <module name="ldbz-shop-service-notify" target="1.8" />
+      <module name="ldbz-shop-service-notify-api" target="1.8" />
+      <module name="ldbz-shop-service-order" target="1.8" />
+      <module name="ldbz-shop-service-order-api" target="1.8" />
+      <module name="ldbz-shop-service-portal" target="1.8" />
+      <module name="ldbz-shop-service-portal-api" target="1.8" />
+      <module name="ldbz-shop-service-redis" target="1.8" />
+      <module name="ldbz-shop-service-redis-api" target="1.8" />
+      <module name="ldbz-shop-service-search" target="1.8" />
+      <module name="ldbz-shop-service-search-api" target="1.8" />
+      <module name="ldbz-shop-service-sso" target="1.8" />
+      <module name="ldbz-shop-service-sso-api" target="1.8" />
+      <module name="ldbz-shop-service-wishlist" target="1.8" />
+      <module name="ldbz-shop-service-wishlist-api" target="1.8" />
+      <module name="ldbz-shop-web-admin" target="1.8" />
+      <module name="ldbz-shop-web-cart" target="1.8" />
+      <module name="ldbz-shop-web-item" target="1.8" />
+      <module name="ldbz-shop-web-order" target="1.8" />
+      <module name="ldbz-shop-web-portal" target="1.8" />
+      <module name="ldbz-shop-web-search" target="1.8" />
+      <module name="ldbz-shop-web-sso" target="1.8" />
+      <module name="ldbz-shop-web-wishlist" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

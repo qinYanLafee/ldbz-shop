@@ -1,0 +1,40 @@
+<section class="flat-imagebox style4">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="flat-row-title">
+					<h3>最受欢迎</h3>
+				</div>
+			</div><!-- /.col-md-12 -->
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="owl-carousel-3">
+				
+					<ldbz:sheet_item_tag key="Most_Viewed" ;item>
+						<div class="imagebox style4">
+							<div class="box-image">
+								<a href="${request.contextPath}/item/${item.CODE}" target="_blank">
+									<img src="${request.contextPath}/portal/images/squares.svg" data-src="${nginxImage}${item.IMAGE}" alt="">
+								</a>
+							</div><!-- /.box-image -->
+							<div class="box-content">
+								<div class="cat-name">
+									<a href="javascript:;" title="">${item.CATEGORY_NAME}</a>
+								</div>
+								<div class="product-name">
+									<a href="${request.contextPath}/item/${item.CODE}" target="_blank">${item.TITLE}</a>
+								</div>
+								<div class="price">
+									<span class="sale">￥${item.PRICE,numberFormat}</span>
+									<span class="regular">￥${item.OLD_PRICE,numberFormat}</span>
+								</div>
+							</div><!-- /.box-content -->
+						</div><!-- /.imagebox style4 -->
+					</ldbz:sheet_item_tag>
+					
+				</div><!-- /.owl-carousel-3 -->
+			</div><!-- /.col-md-12 -->
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+</section><!-- /.flat-imagebox style4 -->

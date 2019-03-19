@@ -1,0 +1,33 @@
+app:
+  id: ldbz-shop-service-admin
+apollo:
+  meta: http://127.0.0.1:8080
+
+spring:
+  dubbo:
+    server: true
+  datasource:
+    druid:
+      filter:
+        config:
+          enabled: true
+#      connect-properties:
+#        config.decrypt: "true"
+#        config.decrypt.key: "MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKxivxjC+9mGcKinvHtqClBoQ7HAjIo5ehv0HFZEfoBuFY/ghi9dR4OY1wA5Oj/ZSUL+roqQdKrWHaK/W6anacECAwEAAQ=="
+#        druid.stat.mergeSql: "true"
+#        druid.stat.slowSqlMillis: "5000"
+
+
+
+
+
+#storage:
+#  type: fastdfs
+#  fastdfs:
+#    tracker_server: 127.0.0.129:22122
+
+
+          
+logging:
+  level:
+     cn.ldbz.mapper: debug

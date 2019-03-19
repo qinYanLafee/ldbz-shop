@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-common-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-common-pojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-common-tag" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-admin-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-advertisement" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-advertisement-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-cart" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-cart-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-item" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-item-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-notify" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-notify-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-order-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-portal" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-portal-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-redis-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-search-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-sso" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-sso-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-wishlist" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-service-wishlist-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-web-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-web-cart" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-web-item" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-web-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-web-portal" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-web-search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-web-sso" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldbz-shop-web-wishlist" charset="UTF-8" />
+  </component>
+</project>

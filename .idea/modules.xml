@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop.iml" filepath="$PROJECT_DIR$/ldbz-shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-common/ldbz-shop-common.iml" filepath="$PROJECT_DIR$/ldbz-shop-common/ldbz-shop-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-common-mapper/ldbz-shop-common-mapper.iml" filepath="$PROJECT_DIR$/ldbz-shop-common-mapper/ldbz-shop-common-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-common-pojo/ldbz-shop-common-pojo.iml" filepath="$PROJECT_DIR$/ldbz-shop-common-pojo/ldbz-shop-common-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-common-tag/ldbz-shop-common-tag.iml" filepath="$PROJECT_DIR$/ldbz-shop-common-tag/ldbz-shop-common-tag.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-admin/ldbz-shop-service-admin.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-admin/ldbz-shop-service-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-admin-api/ldbz-shop-service-admin-api.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-admin-api/ldbz-shop-service-admin-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-advertisement/ldbz-shop-service-advertisement.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-advertisement/ldbz-shop-service-advertisement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-advertisement-api/ldbz-shop-service-advertisement-api.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-advertisement-api/ldbz-shop-service-advertisement-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-cart/ldbz-shop-service-cart.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-cart/ldbz-shop-service-cart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-cart-api/ldbz-shop-service-cart-api.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-cart-api/ldbz-shop-service-cart-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-item/ldbz-shop-service-item.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-item/ldbz-shop-service-item.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-item-api/ldbz-shop-service-item-api.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-item-api/ldbz-shop-service-item-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-notify/ldbz-shop-service-notify.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-notify/ldbz-shop-service-notify.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-notify-api/ldbz-shop-service-notify-api.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-notify-api/ldbz-shop-service-notify-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-order/ldbz-shop-service-order.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-order/ldbz-shop-service-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-order-api/ldbz-shop-service-order-api.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-order-api/ldbz-shop-service-order-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-portal/ldbz-shop-service-portal.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-portal/ldbz-shop-service-portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-portal-api/ldbz-shop-service-portal-api.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-portal-api/ldbz-shop-service-portal-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-redis/ldbz-shop-service-redis.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-redis/ldbz-shop-service-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-redis-api/ldbz-shop-service-redis-api.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-redis-api/ldbz-shop-service-redis-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-search/ldbz-shop-service-search.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-search/ldbz-shop-service-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-search-api/ldbz-shop-service-search-api.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-search-api/ldbz-shop-service-search-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-sso/ldbz-shop-service-sso.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-sso/ldbz-shop-service-sso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-sso-api/ldbz-shop-service-sso-api.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-sso-api/ldbz-shop-service-sso-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-wishlist/ldbz-shop-service-wishlist.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-wishlist/ldbz-shop-service-wishlist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-service-wishlist-api/ldbz-shop-service-wishlist-api.iml" filepath="$PROJECT_DIR$/ldbz-shop-service-wishlist-api/ldbz-shop-service-wishlist-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-web-admin/ldbz-shop-web-admin.iml" filepath="$PROJECT_DIR$/ldbz-shop-web-admin/ldbz-shop-web-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-web-cart/ldbz-shop-web-cart.iml" filepath="$PROJECT_DIR$/ldbz-shop-web-cart/ldbz-shop-web-cart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-web-item/ldbz-shop-web-item.iml" filepath="$PROJECT_DIR$/ldbz-shop-web-item/ldbz-shop-web-item.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-web-order/ldbz-shop-web-order.iml" filepath="$PROJECT_DIR$/ldbz-shop-web-order/ldbz-shop-web-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-web-portal/ldbz-shop-web-portal.iml" filepath="$PROJECT_DIR$/ldbz-shop-web-portal/ldbz-shop-web-portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-web-search/ldbz-shop-web-search.iml" filepath="$PROJECT_DIR$/ldbz-shop-web-search/ldbz-shop-web-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-web-sso/ldbz-shop-web-sso.iml" filepath="$PROJECT_DIR$/ldbz-shop-web-sso/ldbz-shop-web-sso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldbz-shop-web-wishlist/ldbz-shop-web-wishlist.iml" filepath="$PROJECT_DIR$/ldbz-shop-web-wishlist/ldbz-shop-web-wishlist.iml" />
+    </modules>
+  </component>
+</project>

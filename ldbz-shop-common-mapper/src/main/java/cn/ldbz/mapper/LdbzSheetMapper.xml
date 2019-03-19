@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.ldbz.mapper.LdbzSheetMapper" >
+
+  <resultMap id="BaseResultMap" type="cn.ldbz.pojo.LdbzSheet" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="sort_order" property="sortOrder" jdbcType="INTEGER" />
+    <result column="created" property="created" jdbcType="TIMESTAMP" />
+    <result column="creator" property="creator" jdbcType="VARCHAR" />
+    <result column="creator_name" property="creatorName" jdbcType="VARCHAR" />
+    <result column="updated" property="updated" jdbcType="TIMESTAMP" />
+    <result column="updator" property="updator" jdbcType="VARCHAR" />
+    <result column="updator_name" property="updatorName" jdbcType="VARCHAR" />
+    
+    <result column="sheet_name" property="sheetName" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="item_count" property="itemCount" jdbcType="INTEGER" />
+    <result column="sheet_key" property="sheetKey" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <sql id="Base_Column_List" >
+    id , sort_order, created , creator , creator_name, updated , updator, updator_name , 
+    sheet_name , status , item_count , sheet_key
+  </sql>
+  
+  <select id="selectByEntity" resultMap="BaseResultMap"  parameterType="cn.ldbz.pojo.LdbzSheet">
+    select
+    <include refid="Base_Column_List" />
+    from ldbz_item_sheet
+    <where>
+      <if test="entity.sheetName != null and entity.sheetName != '' " >
+        and sheet_name like #{entity.sheetName ,jdbcType=VARCHAR}
+      </if>
+      <if test="entity.status != null " >
+        and status = #{entity.status ,jdbcType=INTEGER}
+      </if>
+      <if test="entity.id != null and entity.id != '' " >
+        and id = #{entity.id ,jdbcType=BIGINT}
+      </if>
+    </where>
+    order by created desc , sort_order , updated desc
+    limit #{start} , #{limit}
+  </select>
+  
+  <select id="getEnableSheetsByKeys" resultMap="BaseResultMap" >
+	  select
+	    <include refid="Base_Column_List" />
+	    from ldbz_item_sheet
+	    where status = 1
+	    and sheet_key in (${sheetKeys})
+	  order by SORT_ORDER
+  </select>
+  
+  <select id="countByEntity" parameterType="cn.ldbz.pojo.LdbzSheet" resultType="java.lang.Long" >
+    select count(*) from ldbz_item_sheet
+    <where>
+      <if test="sheetName != null and sheetName != '' " >
+        and sheet_name like #{sheetName ,jdbcType=VARCHAR}
+      </if>
+      <if test="status != null " >
+        and status = #{status ,jdbcType=INTEGER}
+      </if>
+    </where>
+  </select>
+  
+  <select id="selectByKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from ldbz_item_sheet
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  
+  <update id="updateByKey" parameterType="cn.ldbz.pojo.LdbzSheet" >
+    update ldbz_item_sheet
+    set 
+      sort_order = #{sortOrder,jdbcType=INTEGER},
+      updated = #{updated,jdbcType=TIMESTAMP},
+      updator = #{updator,jdbcType=VARCHAR},
+      updator_name = #{updatorName,jdbcType=VARCHAR} ,
+      sheet_name = #{sheetName,jdbcType=VARCHAR} ,
+      status = #{status,jdbcType=INTEGER},
+      item_count = #{itemCount,jdbcType=INTEGER}
+    where 
+      id = #{id,jdbcType=BIGINT}
+  </update>
+  
+  
+  
+  <select id="getSheetAssignList" resultType="map" >
+	  select ID , ITEM_NAME , ITEM_CODE , SORT_ORDER
+	  from ldbz_item_sheet_assign a
+	  where a.sheet_id = #{sheetId,jdbcType=BIGINT}
+	  order by SORT_ORDER
+  </select>
+  
+  <select id="getSheetAssignListByKey" resultType="map" >
+	  select t.`CODE` , t.TITLE , t.OLD_PRICE , t.PRICE , t.IMAGE , c.CATEGORY_NAME
+		from ldbz_item_sheet_assign a
+		join ldbz_item_sheet s on s.id = a.sheet_id
+		join ldbz_item t on t.id = a.item_id
+		join ldbz_category c on c.id = t.cid
+		where s.sheet_key = #{sheetKey,jdbcType=VARCHAR}
+	  order by a.SORT_ORDER
+  </select>
+  
+  <delete id="deleteAssign" parameterType="java.lang.Long" >
+    delete from ldbz_item_sheet_assign
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  
+  <delete id="deleteAssigns" parameterType="java.util.List" >
+    delete from ldbz_item_sheet_assign
+    where id in
+    <foreach collection="list" item="id" open="(" close=")" separator="," >
+      #{id}
+    </foreach>
+  </delete>
+  
+  <insert id="addAssign" parameterType="cn.ldbz.pojo.LdbzSheetAssign" >
+    insert into ldbz_item_sheet_assign (
+	    sheet_id, sheet_name , item_id , item_name , item_code , creator , creator_name , created , sort_order
+    )
+    values (
+    	#{sheetId,jdbcType=BIGINT},#{sheetName,jdbcType=VARCHAR}, 
+    	#{itemId,jdbcType=BIGINT},#{itemName,jdbcType=VARCHAR} , #{itemCode,jdbcType=BIGINT} , 
+    	#{creator,jdbcType=VARCHAR},#{creatorName,jdbcType=BIGINT},
+    	#{created,jdbcType=TIMESTAMP},#{sortOrder,jdbcType=INTEGER}
+      )
+  </insert>
+  
+  
+</mapper>

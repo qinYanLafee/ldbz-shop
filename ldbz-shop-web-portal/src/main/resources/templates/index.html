@@ -1,0 +1,78 @@
+﻿﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<title>老刀把子</title>
+	<link rel="stylesheet" type="text/css" href="${request.contextPath}/portal/stylesheets/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="${request.contextPath}/portal/stylesheets/style.css" />
+	<link rel="stylesheet" type="text/css" href="${request.contextPath}/portal/stylesheets/responsive.css" />
+	<link rel="shortcut icon" href="${request.contextPath}/portal/favicon.ico" /> 
+	<script type="text/javascript" src="${request.contextPath}/portal/javascript/jquery.min.js"></script>
+</head>
+<body class="header_sticky">
+	<div class="boxed">
+
+		<div class="overlay"></div>
+
+		<!-- 加载状态 start -->
+		<div class="preloader">
+			<div class="clear-loading loading-effect-2">
+				<span></span>
+			</div>
+		</div>
+		<!-- 加载状态 end -->
+
+		<!-- 弹出框  -->
+		<%include("/inc_ad_popup.html"){}%>
+
+		<!-- 页头 -->
+		<%include("/inc_header.html"){}%>
+
+		<!--  滑动广告  -->
+		<%include("/inc_ad_slider.html"){}%>
+		
+		<!--  Box广告  -->
+		<%include("/inc_ad_box.html"){}%>
+		
+		<!-- 新品，特色，热卖 -->
+		<%include("/sec_2.html"){}%>
+
+		<!-- 自营 -->
+		<%include("/sec_3.html"){}%>
+
+		<!-- 最多访问 -->
+		<%include("/inc_most_view.html"){}%>
+
+		<!-- 畅销，特色，热卖 -->
+		<%include("/list_bestsellers_featured_hotsale.html"){}%>
+
+		<!-- 购物简介 -->
+		<%include("/order_desc.html"){}%>
+
+		<!-- 网站信息 -->
+		<%include("/inc_footer.html"){}%>
+		
+		<!-- copyright -->
+		<%include("/inc_copyright.html"){}%>
+
+	</div><!-- /.boxed -->
+
+	<script type="text/javascript" src="${request.contextPath}/portal/javascript/tether.min.js"></script>
+	<script type="text/javascript" src="${request.contextPath}/portal/javascript/bootstrap.min.js"></script>
+	<script type="text/javascript" src="${request.contextPath}/portal/javascript/owl.carousel.js"></script>
+	<script type="text/javascript" src="${request.contextPath}/portal/javascript/base64.js"></script>
+	
+	<script type="text/javascript">
+		var nginxImage = "${nginxImage}" ;
+		var contextPath = "${request.contextPath}";
+	</script>
+
+	<script type="text/javascript" src="${request.contextPath}/portal/javascript/main.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="${request.contextPath}/portal/alert/css/alert.css" />
+	<script type="text/javascript" src="${request.contextPath}/portal/alert/js/alert.min.js"></script>
+</body>	
+</html>

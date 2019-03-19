@@ -1,0 +1,23 @@
+app:
+  id: ldbz-shop-web-admin
+apollo:
+  meta: http://192.168.136.133:8080
+
+sso:
+  web:
+    url: http://localhost:8106/
+
+
+spring:
+  http:
+    multipart:
+      enabled: false
+      
+# fastdfs url
+#fastdfs.base.url: http://127.0.0.132/
+
+# fastdfs storage
+#storage:
+#  type: fastdfs
+#  fastdfs:
+#    tracker_server: 127.0.0.129:22122

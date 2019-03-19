@@ -1,0 +1,18 @@
+app:
+  id: ldbz-shop-service-advertisement
+apollo:
+  meta: http://127.0.0.1:8080
+  
+
+spring:
+  dubbo:
+    server: true
+  datasource:
+    druid:
+      filter:
+        config:
+          enabled: true
+          
+logging:
+  level:
+     cn.ldbz.mapper: debug
